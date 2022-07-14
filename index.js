@@ -27,11 +27,6 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        message: "Table of contents",
-        name: 'contents',
-    },
-    {
-        type: 'input',
         message: "Installation instructions",
         name: 'installation',
       },
@@ -42,7 +37,7 @@ const promptUser = () => {
     },
     {
         type: 'input',
-        message: "Who was involved in contributing to this project?",
+        message: "How can people contribute to the project?",
         name: 'contributions',
       },
       {

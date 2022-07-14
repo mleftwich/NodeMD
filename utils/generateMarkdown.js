@@ -3,8 +3,8 @@ function renderLicenseBadge(license) {
   if (license == 'No license') {
     return "";
   } else {
-  const licenseType = encodeURIComponent(license.replace('-', ' '))
-  return `![${license}](https://img.shields.io/badge/${licenseType})`
+  //const licenseType = encodeURIComponent(license.replace('-', ' '))
+  return `![${license}](https://img.shields.io/static/v1?label=License&message=${license}&color=green)`
 }}
 
 
@@ -13,7 +13,7 @@ function renderLicenseLink(license) {
   if (license == 'No license') {
     return "";
   } else {
-    return `# Licensed under [${license}](https://opensource.org/licenses/${license}) `
+    return `Licensed under [${license}](https://opensource.org/licenses/${license}) `
 }}
 
 
@@ -32,34 +32,47 @@ function generateMarkdown({
   email,
 }) {
   return `
-  # ${title}
   ${renderLicenseBadge(license)}
+  # ${title}
 \
-  # ${description}
-\
-  # Table of Contents
-  * ${contents}
-\
-  # Installation
+  
+  ## Table of Contents
+  * [Description](#description)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  * [Contributing](#contributing)
+  * [Guidelines](#guidelines)
+  * [Tests](#tests)
+  * [License](#license)
+  * [Questions](#questions)
+
+  ${description}
+
+  ## Installation
    ${installation}
-\
-  # Usage
+
+
+  ## Usage
    ${usage}
-\
-  # Contributions
+
+
+  ## Contributing
    ${contributions}
-\
-  # Guidelines
+
+
+  ## Guidelines
    ${guidelines}
-\
-  # Tests
+
+
+  ## Tests
    ${tests}
-\
-  # License
+
+
+  ## License
    ${renderLicenseLink(license)}
 \
-  # Questions
-   For any questions you can find me at [github](https://www.https://github.com/${github}) or email me at [${email}](${email}) 
+  ## Questions
+   For any questions you can find my GitHub at [${github}](https://www.https://github.com/${github}) or email me at [${email}](${email}) 
 `;
 }
 
