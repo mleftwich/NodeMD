@@ -45,7 +45,9 @@ function generateMarkdown({
   * [Tests](#tests)
   * [License](#license)
   * [Questions](#questions)
+---
 
+  ## Description
   ${description}
 
   ## Installation
@@ -70,9 +72,11 @@ function generateMarkdown({
 
   ## License
    ${renderLicenseLink(license)}
-\
+
+   ---
+
   ## Questions
-   For any questions you can find my GitHub at [${github}](https://www.https://github.com/${github}) or email me at [${email}](${email}) 
+   For any questions you can find me at [GitHub](https://github.com/${github}) or email me at [${email}](mailto:${email}) 
 `;
 }
 
