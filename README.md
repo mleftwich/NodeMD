@@ -4,6 +4,7 @@
   
   ## Table of Contents
   * [Description](#description)
+  * [Technologies](#technologies)
   * [Installation](#installation)
   * [Usage](#usage)
   * [Contributing](#contributing)
@@ -14,14 +15,19 @@
 ---
 
   ## Description
-  This is a readme generator using the techniques of node.js we learnt in class over the previous few weeks, it implements the use of the inquirer npm and filesystem to generate a professional readme file based on the responses from user input to prompts in a terminal.
+  This is a README file generator using node.js, it implements the use of the inquirer and filesystem node packages to generate a professional readme file based on the responses from user input to prompts in a terminal. Includes generation of licensing badge and links to authors github and email.
 
-  This readme itself was generated using the app. You can find a demonstration of that process [Here](https://drive.google.com/file/d/141h7A1P8k3hPWwLa86HigRTpJ2MHGptO/view).
+  This README itself was generated using the app. You can find a demonstration of that process [Here](https://drive.google.com/file/d/141h7A1P8k3hPWwLa86HigRTpJ2MHGptO/view).
 
   ![screenshot](./imgs/screenshot.png)
 
+  ## Technologies
+  * node.js
+      * inquirer 
+      * filesystem
+
   ## Installation
-   Node.js must be installed prior to use.
+   Clone the repository and npm install
 
 
   ## Usage
@@ -33,11 +39,11 @@
 
 
   ## Guidelines
-   None.
+   Consider which license is most appropriate for your project and be concise in your descriptions.
 
 
   ## Tests
-   
+   Tests run in development.
 
 
   ## License
